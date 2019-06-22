@@ -1,0 +1,234 @@
+% !TEX program = xelatex
+% !BIB program = bibtex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Modified by:
+% Manuel Lagunas (http://webdiis.unizar.es/~mlagunas/)
+% https://github.com/mlagunas/mlagunas-resume
+% 
+% COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{resume}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Manuel}{Lagunas}
+{\href{mailto:mlagunas@unizar.es}{mlagunas@unizar.es}$\;$ 
+-
+$\;$\urlstyle{same}\href{http://webdiis.unizar.es/~mlagunas/}{webdiis.unizar.es/\textasciitilde mlagunas}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Zaragoza University}
+\descript{MSc in Applied Mathematics}
+\location{Sep 2017 | Zaragoza, Spain}
+\location{Master thesis: 9.5/10}
+\sectionsep
+
+\subsection{Zaragoza University}
+\descript{BS in Computer Science}
+\location{Dec 2016 | Zaragoza, Spain}
+\location{Bachelor project: 9.3/10}
+\sectionsep
+
+\subsection{Aarhus University}
+\location{Jun 2015 | Aarhus, Denmark}
+One year exchange programme.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/mlagunas}{\bf mlagunas} \\
+Stackoverflow://  \href{https://stackoverflow.com/users/6076729/manuel-lagunas?tab=profile}{\bf manuel-lagunas} \\
+LinkedIn://  \href{https://www.linkedin.com/in/mlagunas/}{\bf mlagunas} \\
+Twitter://  \href{https://twitter.com/mlagunas_}{\bf @mlagunas\_} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{Programming}
+\location{Advanced:}
+Python \textbullet{} Git \textbullet{} \LaTeX\ \textbullet{} SVN \\
+% Matplotlib \textbullet{} PyTorch \textbullet{} Numpy
+\location{Intermediate:}
+C \textbullet{} C++ \textbullet{} CSS \textbullet{} HTML\\
+Javascript \textbullet{} PHP\\
+\location{Familiar:}
+Android \textbullet{} MySQL \textbullet{} C\# \textbullet{} Java \\
+\sectionsep
+
+\subsection{Languages}
+\textbf{Spanish} \textbullet{} Native speaker \\
+\textbf{English} \textbullet{} Fluent \\
+\textbf{French} \textbullet{} Basic \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Stochastic Processes \\
+Machine Learning \\
+Optimization Techniques \\
+Evolutionary Computation \\
+\sectionsep
+
+\subsection{Undergraduate}
+Artificial Intelligence \\
+Computer Graphics \\
+Compilers \\
+Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+2016, NASA SpaceApps \\ $\;$\textbullet{} Best citizen-science project  \\
+\vspace{0.15cm}
+2015, Open Source Software Contest \\ $\;$\textbullet{} Finalist  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Experience}
+
+\runsubsection{Adobe Graphics Intelligence Lab}
+\descript{| Research Intern}
+\location{Jun 2019 – Current | San Jose, CA}
+Working with \textbf{\href{http://sunxin.name/}{Xin Sun}} and \href{https://research.adobe.com/person/nathan-carr/}{\textbf{Nathan Carr}} on human capture and relighting.
+\sectionsep
+
+\runsubsection{Graphics and Imaging Lab}
+\descript{| Zaragoza University, PhD in Machine Learning and Computer Graphics}
+\location{Oct 2017 – Current (Sep 2021) | Zaragoza, Spain}
+Working on the interface between machine learning and computer graphics. With a particular interest in the integration of machine learning into inverse rendering methods and in the intersection between human vision perception and machine learning. I am being supervised by \urlstyle{same}\href{http://giga.cps.unizar.es/~diegog/}{\textbf{Diego Gutierrez}} and \urlstyle{same}\href{http://webdiis.unizar.es/~bmasia/}{\textbf{Belen Masia}}.
+\sectionsep
+
+\runsubsection{Graphics and Imaging Lab}
+\descript{| Undergraduate Researcher}
+\location{Oct 2016 – Sept 2017 | Zaragoza, Spain}
+Worked with \textbf{\href{http://www.elenagarces.es/}{Elena Garces}} on transfer learning and similarity problems in non-photorealistic domains (like cliparts or icons) while I was studying my bachelor´s and master´s degrees. This resulted in two publications: \textit{Learning Icons Appearance Similarity} and \textit{Transfer Learning for Illustration Classification}.
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+\nocite{*}
+\printbibliography[heading=none]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH ACTIVITIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Activities}
+
+\location{Deep Bayes Summer School | Aug 2019, Moscow, Russia}
+Summer school on deep learning and bayesian methods.
+\sectionsep
+
+\location{DS3 Data Science Summer School | Jun 2019, Paris, France}
+Summer school covering the latest advances in the field of data science.
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+
+\runsubsection{Ibercentro Media}
+\descript{| Software Engineering Intern}
+\location{Jun 2015 – Oct 2015 | Zaragoza, Spain}
+Software consulting company specialized in services for mass media companies. I created a tool for automatic fact extraction from spanish text leveraging natural language processing (NLP) tools.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INDIVIDUAL PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Individual projects}
+
+\location{Evolutionary Algorithms Library | Python + Numpy + Matplotlib}
+High-level library that uses evolutionary strategies to solve numerical optimization problems with a modular structure that allows to easily implement new operators.
+
+% It has a modular structure that makes easy to implement new operators for the selection, crossover, mutation, replacement operations or optimization functions.
+\sectionsep
+
+\location{PyTorch np-transforms | Python + PyTorch + Numpy}
+PyTorch image transforms based on Numpy instead of the default Python Imaging Library. It includes support for HDR images, adds new transforms and filters.
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
